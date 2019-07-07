@@ -2,12 +2,11 @@ module Main where
 
 import Data.Char (toLower)
 import Data.Set (fromAscList, notMember)
-import qualified Data.ByteString as B (ByteString, writeFile)
-import qualified Data.ByteString.Lazy as LB
+import qualified Data.ByteString as B (ByteString)
 import Control.Monad ((>=>))
 import Control.Concurrent.Async (mapConcurrently)
 import Text.Printf (printf)
-import System.FilePath.Posix (takeExtension, makeValid, takeFileName)
+import System.FilePath.Posix (takeExtension, makeValid)
 import System.Directory (listDirectory)
 import Data.Maybe (catMaybes)
 import Text.Read (readMaybe)
